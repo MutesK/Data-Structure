@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+
+# Visual Studio Unless Files
+*.db
+*.log
+*.obj
+*.ipb
+*.pdb
+*.tlog
