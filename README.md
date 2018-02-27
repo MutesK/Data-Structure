@@ -6,6 +6,7 @@
 
 - [ ] N Queen Problem
 - [ ] PowerSet
+- [x] Counting Cell Blob
 - [x] Maze
 - [ ] Hash
 - [ ] 그래프
