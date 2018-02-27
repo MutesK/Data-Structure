@@ -4,7 +4,7 @@
 
 ## TO-DO List
 
-- [ ] N Queen Problem
+- [x] N Queen Problem
 - [ ] PowerSet
 - [x] Counting Cell Blob
 - [x] Maze
