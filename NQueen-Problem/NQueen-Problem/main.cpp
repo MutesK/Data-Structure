@@ -75,7 +75,6 @@ bool isPromising(int level)
 	{
 		// 바로 밑인가?
 		if (Cols[i] == Cols[level])
-
 			return false;
 
 		// 같은 대각선인가? = 기울기가 1인가
