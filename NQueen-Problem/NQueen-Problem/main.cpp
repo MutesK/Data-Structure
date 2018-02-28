@@ -22,52 +22,49 @@ enum
 	eBLANK = 0,
 	eNOT,
 	
-	CHESSSIZE = 10,
+	//CHESSSIZE = 10,
 };
 
-int Cols[CHESSSIZE + 1];
-bool NQueen(int level);
+int* Cols;
+bool NQueen(int level, int N);
+
+
 bool isPromising(int level);
 
-
+int Method = 0;
 int main()
 {
-	NQueen(0);
+	int N; 
+
+	scanf_s("%d", &N);
+	Cols = new int[N + 1];
+
+	NQueen(0, N);
+	printf("%d", Method);
 
 	return 0;
 }
 
-bool NQueen(int level)
+bool NQueen(int level, int N)
 {
 	if (!isPromising(level))   // 퀸이 올바른 위치인지 확인한다.
 		return false;
-	else if (level == CHESSSIZE) // 레벨이 전부 도달한경우, 리턴
+	else if (level == N) // 레벨이 전부 도달한경우, 리턴
 	{
-		for (int Ypos = 1; Ypos <= CHESSSIZE; Ypos++)
-		{
-			for (int Xpos = 1; Xpos <= CHESSSIZE; Xpos++)
-			{
-				if (Cols[Ypos] == Xpos)
-					printf("5 ");
-				else
-					printf("0 ");
-			}
-			printf("\n");
-		}
+		Method++;
 		return true;
 	}
-
-	for (int i = 1; i <= CHESSSIZE; i++)
+	
+	for (int i = 1; i <= N; i++)
 	{
 		Cols[level + 1] = i; // 퀸을 두고 -> 해당 X좌표를 넣어준다.
-		if (NQueen(level + 1)) // 퀸을 둔곳이 충돌이 없는지 재귀로 확인한다.
-			return true;
+		NQueen(level + 1, N);// 퀸을 둔곳이 충돌이 없는지 재귀로 확인한다.
+	
 	}
 
 	return false; // 둘수없는 경우의 수에 걸렷다.
 
 }
-
 
 bool isPromising(int level)
 {

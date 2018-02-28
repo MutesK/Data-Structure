@@ -9,7 +9,7 @@
 - [x] Counting Cell Blob
 - [x] Maze
 - [ ] Hash
-- [ ] 우선순위 큐(Priority Queue)
+- [x] 우선순위 큐(Priority Queue)
 - [ ] 그래프
 - [ ] Minimun Spanning Tree
 - [ ] Shortest Path
@@ -20,8 +20,8 @@
 - [x] 선택 정렬
 - [x] 삽입 정렬
 - [x] 퀵 정렬
-- [ ] 합병 정렬
-- [ ] 힙 정렬
+- [x] 합병 정렬
+- [x] 힙 정렬
 - [ ] 기수 정렬
 - [x] Singly Linked List
 - [x] Doubly Linked List
@@ -30,7 +30,6 @@
 - [x] Linked List Queue
 - [ ] Array Queue
 - [ ] Binary Tree
-- [ ] Heap
 - [ ] Red Black Tree
 - [ ] AVL
 
@@ -116,3 +115,30 @@ bool isPromising(int Level)
 + 루트에서 출발하여, 체계적으로 모든 노드를 방문하는 절차를 기술한다.
 + 1차원적인 생각으로 진짜 트리를 만드는것은 아님. 로직상으로 탐색할수 있게 한다.
 
+
+## Heap
+
++ Complete Binary Tree
++ Heap Property 만족한다.
+  + Max Heap Property  = 부모는 자식보다 크거나 작다.
+  + Min Heap Property = 부모는 자식보다 작거나 같다.
++ 일반 이진트리의 속성으로 Height = Log_2 (Node의 갯수)
++ Full Binary Tree
+  + 모든 레벨의 노드들이 꽉차 있는 형태
++ Complete Binary Tree
+  + 마지막 레벨을 제외하면 완전히 빈칸으로 꽉차 있음.
++ 힙은 일차원 배열로 표현이 가능함.
+  + 루트 노드 A[1]
+  + A[i]의 부모 = A[i / 2]
+  + A[i]의 왼쪽 자식 = A[2i]
+  + A[i]의 오른쪽 자식 = A[2i + 1]
+
+------
+
+# 어렵다고 느끼거나 다시 봐야될것들
+
++ 합병정렬
++ 퀵정렬
++ 삽입정렬
++ 힙정렬
++ N Queen Problem
