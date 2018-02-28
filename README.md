@@ -5,33 +5,38 @@
 ## TO-DO List
 
 - [x] N Queen Problem
-- [ ] PowerSet
+- [x] PowerSet
 - [x] Counting Cell Blob
 - [x] Maze
 - [ ] Hash
+- [ ] 우선순위 큐(Priority Queue)
 - [ ] 그래프
 - [ ] Minimun Spanning Tree
 - [ ] Shortest Path
 - [ ] Compresssion
 - [x] 이진 탐색
 - [x] 순차 탐색
-- [ ] 버블 정렬
-- [ ] 선택 정렬
-- [ ] 삽입 정렬
-- [ ] 퀵 정렬
+- [x] 버블 정렬
+- [x] 선택 정렬
+- [x] 삽입 정렬
+- [x] 퀵 정렬
 - [ ] 합병 정렬
 - [ ] 힙 정렬
 - [ ] 기수 정렬
 - [x] Singly Linked List
 - [x] Doubly Linked List
-- [x] LinkedList Stack
+- [x] Linked List Stack
 - [ ] Array Stack
-- [x] LinkedList Queue
+- [x] Linked List Queue
 - [ ] Array Queue
 - [ ] Binary Tree
 - [ ] Heap
 - [ ] Red Black Tree
 - [ ] AVL
+
+------
+
+
 
 ## SinglyLinkedList
 
@@ -95,4 +100,19 @@ bool isPromising(int Level)
     return true;
 }
 ```
+
+## PowerSet
+
+*멱집합*
+
++ { a , b, c, d, e, f} 의 모든 부분집합을 나열하려면,
++  a를 제외한 {b, c, d, e, f}의 모든 부분집합들을 나열하고
++ {b, c, d, e, f}의 모든 부분집합에 {a}를 추가한 집합들을 나열한다.
+
+*상태 공간 트리*
+
++ 해를 찾기 위해 탐색할 필요가 있는 모든 후보들을 포함하는 트리
++ 트리의 모든 노드를 방문하면 해를 찾을수 있다.
++ 루트에서 출발하여, 체계적으로 모든 노드를 방문하는 절차를 기술한다.
++ 1차원적인 생각으로 진짜 트리를 만드는것은 아님. 로직상으로 탐색할수 있게 한다.
 
